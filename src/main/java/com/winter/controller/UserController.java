@@ -5,6 +5,7 @@ import com.winter.service.UserService;
 import com.winter.service.impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -33,7 +34,8 @@ public class UserController {
     }
 
     @RequestMapping(value = "/index")
-    public String login(){
+    public String login(Model model){
+        model.addAttribute("name","养森瘦瘦");
         return "/index";
     }
 }
