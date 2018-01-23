@@ -2,12 +2,16 @@
 <head>
     <meta charset="UTF-8" />
     <title>养森瘦瘦</title>
+    <link rel="stylesheet" type="text/css"/>
     <style type="text/css">
-        
+        body{
+            background-image: image('/static/image/shoushou.jpg');
+        }
     </style>
 </head>
-<body style="background: image(shoushou.jpg)">
+<body>
     <h1 style="font-weight: 500;text-align: center;color: #b92c28">养森瘦瘦</h1>
+    <img src="/resources/static/image/shoushou.jpg"/>
     <!--/*@thymesVar id="name" type="java.lang.String"*/-->
     <p th:text="'hello!'+${name}"></p>
     <a th:href="@{https://www.baidu.com}">百度</a>
