@@ -10,9 +10,15 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     filters: stat
     maxActive: 20
+#  配置视图解析器
   thymeleaf:
     prefix: classpath:/templates/
     suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+    content-type: text/html
+#    开发时关闭缓存，不然没法看到实时页面效果
+    cache: false
 mybatis:
   mapper-locations: classpath:/mapping/*.xml
   type-aliases-package: com.winter.model

@@ -1,15 +1,15 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8" />
-    <title>Test20</title>
+    <title>养森瘦瘦</title>
+    <style type="text/css">
+        
+    </style>
 </head>
-<body>
-    <h1 style="font-weight: 500;text-align: center;color: #b92c28">hello yangsen!!!</h1>
-    <form>
-        用户名：<input type="text"/>
-        密码：<input type="text"/>
-        邮箱：<input type="email"/>
-        <button>登录</button>
-    </form>
+<body style="background: image(shoushou.jpg)">
+    <h1 style="font-weight: 500;text-align: center;color: #b92c28">养森瘦瘦</h1>
+    <!--/*@thymesVar id="name" type="java.lang.String"*/-->
+    <p th:text="'hello!'+${name}"></p>
+    <a th:href="@{https://www.baidu.com}">百度</a>
 </body>
 </html>
