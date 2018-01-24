@@ -1,6 +1,7 @@
 package com.winter.service;
 
 import com.winter.model.User;
+import io.swagger.models.auth.In;
 
 import java.util.List;
 
@@ -13,4 +14,10 @@ public interface UserService {
     int addUser(User user);
 
     List<User> findAllUser(int pageNum,int pageSize);
+
+    User getUserById(Integer id);
+
+    int deleteUser(User user);
+
+    User updateUser(User user);
 }

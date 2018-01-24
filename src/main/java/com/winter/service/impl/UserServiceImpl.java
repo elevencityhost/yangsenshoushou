@@ -20,7 +20,6 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public int addUser(User user) {
-        System.out.println("进入service层");
         return userMapper.insertSelective(user);
     }
 
@@ -29,5 +28,22 @@ public class UserServiceImpl implements UserService{
         //将参数传给这个方法
         PageHelper.startPage(pageNum,pageSize);
         return userMapper.selectAllUser();
+    }
+
+    @Override
+    public User getUserById(Integer id) {
+        return userMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public int deleteUser(User user) {
+        return userMapper.deleteByPrimaryKey(user.getUserId());
+    }
+
+    @Override
+    public User updateUser(User user) {
+        userMapper.updateByPrimaryKeySelective(user);
+        User user1 = userMapper.selectByPrimaryKey(user.getUserId());
+        return user1;
     }
 }
