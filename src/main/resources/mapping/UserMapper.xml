@@ -83,4 +83,8 @@
       phone = #{phone,jdbcType=VARCHAR}
     where user_id = #{userId,jdbcType=INTEGER}
   </update>
+  <select id="getUserById" parameterType="java.lang.Integer" resultType="com.winter.model.User">
+    SELECT <include refid="Base_Column_List" />
+    FROM t_user where user_id = #{id}
+  </select>
 </mapper>
