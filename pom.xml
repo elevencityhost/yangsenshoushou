@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>springboot-mybatis-demo</name>
-	<description>Demo project for Spring Boot</description>
+	<description>yangsen resource system</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
