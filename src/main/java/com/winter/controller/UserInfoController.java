@@ -13,6 +13,11 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "/userInfo")
 public class UserInfoController {
 
+    /**
+    　　* 暴露查询用户详情接口
+    　　* @author 十一城城主
+    　　* @date 2018/1/25 18:06
+    　　*/
     @ApiOperation(value = "查询用户详情",notes = "根据用户ID查询用户详细信息")
     @ApiImplicitParam(name = "id",value = "用户ID",dataType = "int",required = true,paramType = "query")
     @PostMapping(value = "/select")
