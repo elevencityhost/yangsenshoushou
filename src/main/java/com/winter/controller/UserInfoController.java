@@ -26,6 +26,11 @@ public class UserInfoController {
         return id+"";
     }
 
+    /**
+    　　* 暴露返回用户实体接口
+    　　* @author 十一城城主
+    　　* @date 2018/1/25 18:08
+    　　*/
     @PostMapping(value = "/responseUser")
     @ApiImplicitParam(name ="user",value = "用户实体",required = true,dataType = "User")
     public User responseUser(@RequestBody User user){
