@@ -5,6 +5,7 @@
 负载均衡 Nginx
 开发工具 IDEA
 项目管理 Maven
+项目托管 GitHub
 技术选型
 •	核心框架：Spring Boot 1.5.9
 •	安全框架：Apache Shiro 1.3
