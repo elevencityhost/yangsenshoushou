@@ -61,7 +61,7 @@ public class UserController {
         System.out.println(user);
        return userService.updateUser(user);
     }
-
+    
     @ApiIgnore
     @RequestMapping(value = "/index")
     public String login(Model model){
