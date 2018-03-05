@@ -1,6 +1,11 @@
 # yangsenshoushou
 养森瘦瘦代理商用户管理系统
 使用SpringBoot以及mybatis后台代码自动生成策略
+静态资源服务器 Nginx
+负载均衡 Nginx
+开发工具 IDEA
+项目管理 Maven
+项目托管 GitHub
 技术选型
 •	核心框架：Spring Boot 1.5.9
 •	安全框架：Apache Shiro 1.3
@@ -15,5 +20,5 @@
 安装环境
 •	JDK 1.8
 •	MySql 5.1.25
-•	Tomcat 8.5.23
+•	Tomcat  8.5.23
 
