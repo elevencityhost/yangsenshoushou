@@ -1,6 +1,6 @@
 #yangsenshoushou
 养森瘦瘦代理商用户管理系统
-使用SpringBoot以及mybatis后台代码自动生成策略
+使用SpringBoot框架以及mybatis后台代码自动生成策略
 静态资源服务器 Nginx
 负载均衡 Nginx
 开发工具 IDEA
